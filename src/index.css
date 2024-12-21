@@ -55,16 +55,24 @@ body {
 
 .taskList li {  
   margin: 15px 0px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.taskList li span {
   font-size: 18px;
 }
 
-/*
-      <h1 className="heading">To-Do List</h1>
-      <input type="text" id="task" placeholder="Enter task"/>
-      <button className="addTask">Add</button>
-      <ul className = "taskList">
-        <Task />
-        <Task />
-        <Task />
-      </ul>
-*/
+.taskList li img {
+  width: 15px;
+  height: 15px;
+}
+
+.taskList .checkbox {
+  margin-right: 20px;
+}
+
+.taskList .cross {
+  margin-left: auto;
+}
