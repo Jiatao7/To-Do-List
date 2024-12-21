@@ -76,3 +76,7 @@ body {
 .taskList .cross {
   margin-left: auto;
 }
+
+.checked {
+  text-decoration: line-through;
+}

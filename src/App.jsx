@@ -11,12 +11,8 @@ export default function App() {
     setTasks(prevTasks => [...prevTasks, newTask])
   }
 
-  
   //Create task elements
-  const taskElements = tasks.map(task => <Task task={task} />)
-  console.log(tasks)
-  console.log(taskElements)
-
+  const taskElements = tasks.map((task, index) => <Task key={index} task={task} />)
 
   return (
     <>
