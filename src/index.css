@@ -71,10 +71,12 @@ body {
 
 .taskList .checkbox {
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .taskList .cross {
   margin-left: auto;
+  cursor: pointer;
 }
 
 .checked {

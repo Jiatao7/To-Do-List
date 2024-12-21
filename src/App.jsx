@@ -11,8 +11,13 @@ export default function App() {
     setTasks(prevTasks => [...prevTasks, newTask])
   }
 
+  function deleteTask(task) {
+    console.log(task);
+    setTasks(prevTasks => prevTasks.filter(prevTask => prevTask !== task))
+  }
+
   //Create task elements
-  const taskElements = tasks.map((task, index) => <Task key={index} task={task} />)
+  const taskElements = tasks.map((task, index) => <Task task={task} deleteTask={deleteTask}/>)
 
   return (
     <>
