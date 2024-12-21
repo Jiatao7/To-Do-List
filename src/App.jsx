@@ -12,7 +12,6 @@ export default function App() {
   }
 
   function deleteTask(task) {
-    console.log(task);
     setTasks(prevTasks => prevTasks.filter(prevTask => prevTask !== task))
   }
 

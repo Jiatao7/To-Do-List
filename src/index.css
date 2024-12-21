@@ -46,7 +46,7 @@ body {
   flex-grow: 1;
   height: 40px;
   border-radius: 20px;
-  background-color: skyblue;
+  background-color: #3599f9;
 }
 
 .taskList {
@@ -65,8 +65,8 @@ body {
 }
 
 .taskList li img {
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
 }
 
 .taskList .checkbox {
