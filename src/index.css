@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: darkblue;
+  background-color: lightblue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,3 +20,51 @@ body {
   color: black;
   padding: 20px;
 }
+
+.heading {
+  text-align: center;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+
+#task {
+  font-size: 16px;
+  flex-grow: 3;
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+.addButton {
+  font-size: 16px;
+  flex-grow: 1;
+  height: 40px;
+  border-radius: 20px;
+  background-color: skyblue;
+}
+
+.taskList {
+  margin: 20px;
+}
+
+.taskList li {  
+  margin: 15px 0px;
+  font-size: 18px;
+}
+
+/*
+      <h1 className="heading">To-Do List</h1>
+      <input type="text" id="task" placeholder="Enter task"/>
+      <button className="addTask">Add</button>
+      <ul className = "taskList">
+        <Task />
+        <Task />
+        <Task />
+      </ul>
+*/
