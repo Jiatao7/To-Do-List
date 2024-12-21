@@ -3,13 +3,11 @@ import unchecked from './assets/unchecked.png';
 import cross from './assets/cross.png';
 
 
-export default function Task() {
+export default function Task(props) {
     return (
         <li>
             <img className="checkbox" src={unchecked} alt="checked" />
-            <span>A task</span>
-            <img className = "cross" src={cross} alt="cross" />
-            
+            <span>{props.task}</span>            
         </li>
     )
 }
